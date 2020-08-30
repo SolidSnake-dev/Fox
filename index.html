@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Cardano </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -29,6 +29,18 @@ body, html {
 .logo{
   background-color: black;
 }
+
+.cardano-wallet-img{
+
+  max-height: 140px;
+}
+
+.scale-down-cardano-img{
+  object-fit: scale-down;
+  max-height: 90px;
+
+}
+
 
 </style>
 <body>
@@ -66,10 +78,10 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-jumbo w3-hide-small">Welcome to Cardano &#x1F525;FOX&#x1F525; pool</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to Cardano &#x1F525;FOX&#x1F525; pool</span><br>
     <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
   </div> 
@@ -130,23 +142,23 @@ body, html {
   <h3 class="w3-center">THE TEAM</h3>
   <p class="w3-center w3-large">The ones who runs this company</p>
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col m3">
+    <div class="w3-col m6">
       <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <img src="/w3images/team2.jpg" alt="Jonathan" style="width:100%">
         <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
+          <h3>Jonathan Rodriguez</h3>
+          <p class="w3-opacity">Founder</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
-    <div class="w3-col m3 w3-margin-bottom">
+    <div class="w3-col m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <img src="/w3images/team1.jpg" alt="Veronica" style="width:100%">
         <div class="w3-container">
-          <h3>Anja Doe</h3>
-          <p class="w3-opacity">Art Director</p>
+          <h3>Veronica Ancavil</h3>
+          <p class="w3-opacity">Co-Founder</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
@@ -252,32 +264,33 @@ body, html {
   <h3>Cardano Wallets</h3>
   <p class="w3-large">Choose a wallet that fits your needs.</p>
   <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Daedelus</li>
-        <li class="w3-black w3-padding-16"><b>Full Node</b> wallet </li>
+    <div class="w3-col m6">
+      <div class="w3-ul w3-black w3-hover-shadow">
+        <p class="w3-black w3-xlarge w3-padding-32"><b>Daedelus</b></p>
+        <p class="w3-black w3-padding-16"><b>Full Node</b> wallet </p>
         <div class="w3-black">
           <a href="#home">
-            <img alt="W3Schools" src="https://daedaluswallet.io/static/daedalus-logo-netlify-3c3bf7a95797b28bdf2f9a52e20d0b51.svg" width="30%" height="30%">
+            <img class="scale-down-cardano-img" alt="Daedelus" src="https://daedaluswallet.io/static/daedalus-logo-netlify-3c3bf7a95797b28bdf2f9a52e20d0b51.svg" width="30%" height="30%">
           </a>
         </div>
         <li class="w3-black w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          <button class="w3-button w3-black w3-padding-large">Download</button>
         </li>
-      </ul>
+      </div>
     </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Yoroi</li>
-        <li class="w3-padding-16"><b>Chrome/Android/IOS</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 25</h2>
-          <span class="w3-opacity">per month</span>
+    <div class="w3-col m6">
+      <div class="w3-ul w3-black w3-hover-shadow">
+        <p class="w3-black w3-xlarge w3-padding-32"><b>Yoroi</b></p>
+        <p class="w3-black w3-padding-16"><b>Light Node</b> wallet </p>
+        <div class="w3-black">
+          <a href="#home">
+            <img class="scale-down-cardano-img" alt="Yoroi" src="img/Yoroi.webp">
+          </a>
+        </div>
+        <li class="w3-black w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Download</button>
         </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -332,14 +345,16 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://t.me/cardanofox" target="_blank">
+    <i class="fa fa-telegram w3-hover-opacity"></i>
+    </a>
+    <a href="https://twitter.com/CardanoFox" target="_blank">
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.instagram.com/fox_cardano_stake_pool" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <script>
