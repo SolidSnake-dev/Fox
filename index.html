@@ -103,10 +103,10 @@
     <li class="w3-black w3-xlarge w3-padding-32">Stake with us!</li>
     <li class="w3-padding-16"><b>Ticker: </b> &#x1F525;FOX&#x1F525;</li>
     <li class="w3-padding-16" style="word-wrap: break-word"><b>ID: </b> 2f17551ea621427535afc23e233b2d6a40ef44999ced2b6b7b0ea8fc</li>
-    <li class="w3-padding-16"><b>Fee</b> 1%</li>
+    <li class="w3-padding-16"><b>Fee</b> 1.9%</li>
     <li class="w3-padding-16"><b>Fixed Cost</b> 340 Ada</li>
     <li class="w3-padding-16">
-      <b>ROA: </b><span id="2f17551ea621427535afc23e233b2d6a40ef44999ced2b6b7b0ea8fc_roa">%</span>
+      <b>Return on assets (ROA) : 5-6%</span>
     </li>
     <li class="w3-light-grey w3-padding-24">
       <a href="https://adapools.org/pool/2f17551ea621427535afc23e233b2d6a40ef44999ced2b6b7b0ea8fc" target="_blank" class="w3-btn w3-black w3-padding-large">More info</a>
@@ -135,7 +135,6 @@
         <div class="w3-container">
           <h3>Veronica A.</h3>
           <p class="w3-opacity">Co-Founder</p>
-         
         </div>
       </div>
     </div>
@@ -168,24 +167,28 @@
 
   <button onclick="w3_accordion('faq1')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
     What is a stake pool?</button>
-    
     <div id="faq1" class="w3-hide w3-container w3-center w3-pale-grey">
-      <p>Stake pools are run by stake pool operators. These are network participants with the skills to reliably ensure consistent uptime of a node, which is essential in ensuring the success of the Ouroboros protocol and the Cardano network as a whole.
-        The protocol uses a probabilistic mechanism to select a leader for each slot, who will be expected to create the next block in the chain. The chance of a stake pool node being selected as slot leader increases proportionately to the amount of stake delegated to that node. Each time a stake pool node is selected as a slot leader and successfully creates a block, it receives a reward, which is shared with the pool proportionate to the amount each member has delegated. Stake pool operators can deduct their running costs from the awarded ada, as well as specify a profit margin for providing the service.</p>
+      <p>These are network participants with the skills to reliably ensure consistent uptime of a node, which is essential in ensuring the success Cardano network as a whole.</p>
+    </div>
+    <button onclick="w3_accordion('faq2')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
+      How does the protocol works?</button>
+      <div id="faq2" class="w3-hide w3-container w3-center w3-pale-grey">
+
+      <p>The protocol uses a probabilistic mechanism to select a leader for each slot, who will be expected to create the next block in the chain. The chance of a stake pool node being selected as slot leader increases proportionately to the amount of stake delegated to that node. Each time a stake pool node is selected as a slot leader and successfully creates a block, it receives a reward, which is shared with the pool proportionate to the amount each member has delegated. Stake pool operators can deduct their running costs from the awarded ada, as well as specify a profit margin for providing the service.</p>
     </div>
 
-    <button onclick="w3_accordion('faq2')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
+    <button onclick="w3_accordion('faq3')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
       What is a stake pool saturation?</button>
-      <div id="faq2" class="w3-hide w3-container w3-center w3-pale-grey">
+      <div id="faq3" class="w3-hide w3-container w3-center w3-pale-grey">
         <p>
           Saturation is a term used to indicate that a particular stake pool has more stake delegated to it than is ideal for the network, and once a pool reaches the point of saturation it will offer diminishing rewards. The saturation mechanism was designed to prevent centralization by encouraging delegators to delegate to different stake pools, and operators to set up alternative pools so that they can continue earning maximum rewards. Saturation, therefore, exists to preserve the interests of both ada holders delegating their stake and stake pool operators.
-          The goal is to avoid any single pool becoming too large – thereby disincentivizing delegation to other pools – and receiving a disproportionate amount of the rewards. The health of the network is partly determined by having a high number of active stake pools with a balanced amount of stake delegated to them. The more numerous and geographically diverse the network’s pools, the better. Each stake pool’s saturation percentage is shown within the Daedalus stake pool selection menu.
+          The goal is to avoid any single pool becoming too large – thereby disincentivizing delegation to other pools – and receiving a disproportionate amount of the rewards. The health of the network is partly determined by having a high number of active stake pools with a balanced amount of stake delegated to them. The more numerous and geographically diverse the network’s pools, the better.
         </p>
       </div>
 
-      <button onclick="w3_accordion('faq3')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
+      <button onclick="w3_accordion('faq4')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
         What is a stake pool performance?</button>
-        <div id="faq3" class="w3-hide w3-container w3-center w3-pale-grey">
+        <div id="faq4" class="w3-hide w3-container w3-center w3-pale-grey">
           <p>
             The performance metric is an indicator of how well a stake pool is performing. It is given as a percentage, and is measured by how many blocks the stake pool has produced compared to how many it was expected to produce. For example, if a pool only produces half the number of blocks that it was nominated for, its performance rating is 50%. This could happen because the pool has a poor network connection, or has been turned off by its operator.
             Performance ratings make more sense over a longer period of time. If a pool has not yet been selected to produce a block in the current epoch, its performance rating will be 0%, even if it is likely to produce blocks later in the epoch. Performance ratings of over 100% are possible if a pool creates more blocks than it was nominated to produce.
@@ -193,9 +196,9 @@
           </p>
         </div>
 
-        <button onclick="w3_accordion('faq4')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
+        <button onclick="w3_accordion('faq5')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
           How can I delegate to &#x1F525;FOX&#x1F525; Pool?</button>
-          <div id="faq4" class="w3-hide w3-container w3-center w3-pale-grey">
+          <div id="faq5" class="w3-hide w3-container w3-center w3-pale-grey">
             <p>
               Install either Daedalus or Yoroi wallet
             </p>
@@ -212,11 +215,12 @@
               2f17551ea621427535afc23e233b2d6a40ef44999ced2b6b7b0ea8fc
             </p>
           </div>
-          <button onclick="w3_accordion('faq5')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
+          <button onclick="w3_accordion('faq6')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
             Why should I select &#x1F525;FOX&#x1F525; Pool?</button>
-            <div id="faq5" class="w3-hide w3-container w3-center w3-pale-grey">
+            <div id="faq6" class="w3-hide w3-container w3-center w3-pale-grey">
               <p>
-                Many things can go wrong, if you select a bad operator. The pool could fail, blocks be missed or it could completely go out of business. This means missing out on your staking rewards. The operator could increase the fees without you noticing, which means less rewards for you.
+                If you select a bad pool operator. The pool could fail, blocks be missed or it could completely go out of business. This means missing out on your staking rewards.
+                We offer high rewards, because we're commited to charge low fees and because our nodes are always running and monitored 24/7
               </p>
             </div>
 
