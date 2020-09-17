@@ -43,7 +43,7 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" id="home">
+<header class="bgimg-1 w3-display-container w3-animate-opacity" id="home">
   <div class="transbox">
   <div class="w3-display-left w3-text-black" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">
@@ -101,8 +101,13 @@
 <div class="w3-margin-bottom">
   <ul class="w3-ul w3-border w3-center w3-hover-shadow">
     <li class="w3-black w3-xlarge w3-padding-32">Stake with us!</li>
-    <li class="w3-padding-16"><b>Ticker: </b> &#x1F525;FOX&#x1F525;</li>
-    <li class="w3-padding-16" style="word-wrap: break-word"><b>Pool ID: </b> 2f17551ea621427535afc23e233b2d6a40ef44999ced2b6b7b0ea8fc</li>
+    <li class="w3-padding-16"><b>Ticker: </b> FOX </li>
+    <li class="w3-padding-16" ><b>Pool ID: 
+    <input class="w3-input w3-center w3-hover-grey w3-border-0" style="word-wrap: break-word" type="text" value="2f17551ea621427535afc23e233b2d6a40ef44999ced2b6b7b0ea8fc" id="copyMe" readonly>
+            <div>
+              <button class="w3-btn w3-dark-grey w3-margin-bottom" onclick="copyMyText()">Copy To Clipboard</button>
+            </div>
+    </li>
     <li class="w3-padding-16"><b>Fee</b> 1.9%</li>
     <li class="w3-padding-16"><b>Fixed Cost</b> 340 Ada</li>
     <li class="w3-padding-16">
@@ -197,13 +202,11 @@
         </div>
 
         <button onclick="w3_accordion('faq5')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
-          How can I delegate to &#x1F525;FOX&#x1F525; Pool?</button>
+          How can I delegate to [FOX] Pool?</button>
           <div id="faq5" class="w3-hide w3-container w3-center w3-pale-grey">
+           
             <p>
-              Install either Daedalus or Yoroi wallet
-            </p>
-            <p>
-              Find us using ticker [&#x1F525;FOX&#x1F525;]
+              Find us using ticker [FOX]
             </p>
             <p>
               <b>OR</b>
@@ -211,12 +214,13 @@
             <p>
               Find us using our Pool ID:
             </p>
-            <p class="w3-center">
+            <p class="w3-center" style="word-wrap: break-word">
               2f17551ea621427535afc23e233b2d6a40ef44999ced2b6b7b0ea8fc
             </p>
+            
           </div>
           <button onclick="w3_accordion('faq6')" class="w3-btn w3-block w3-black w3-round w3-margin-bottom">
-            Why should I select &#x1F525;FOX&#x1F525; Pool?</button>
+            Why should I select [FOX] Pool?</button>
             <div id="faq6" class="w3-hide w3-container w3-center w3-pale-grey">
               <p>
                 If you select a bad pool operator. The pool could fail, blocks be missed or it could completely go out of business. This means missing out on your staking rewards.
@@ -344,6 +348,17 @@ $.each( data.data, function( i, val ) {
 }); 
 		});
 </script>
+
+<script>
+  function copyMyText() {
+       //select the element with the id "copyMe", must be a text box
+       var textToCopy = document.getElementById("copyMe");
+       //select the text in the text box
+       textToCopy.select();
+       //copy the text to the clipboard
+       document.execCommand("copy");
+  }
+  </script>
 
 
 
